@@ -55,7 +55,7 @@ public class Main {
         // Найти максимальное число
         long result6 = numbers.stream() // делаем поток с массива
                 .map(x -> Integer.parseInt(x))// переводим строку в число 10, 20, 30, 10, 100, 50
-                .max((x, y) -> Integer.compare(x, y))// фильтруем поток по заданным параметрам
+                .max((x, y) -> Integer.compare(x, y)) // находим максимальное число
                 .orElse(-1);
 
         System.out.println("Максимальное число -" + result6);
